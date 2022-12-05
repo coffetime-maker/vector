@@ -19,7 +19,10 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <img src="img/header_logo.svg" alt="Логотип" class="header__container__logo">
+            <picture class="header__container__logo">
+                <source srcset="img/media_320/header_logo_320.svg" media="(max-width: 320px)">
+                <img src="img/header_logo.svg" alt="Логотип">
+            </picture>
             <nav class="header__container__nav nav">
                 <ul class="nav__list menu">
                     <li class="menu__item"><a href="#hero">Главная</a></li>
@@ -27,6 +30,11 @@
                     <li class="menu__item"><a href="#teachers">Преподаватели</a></li>
                     <li class="menu__item"><a href="#courses">Курсы</a></li>
                 </ul>
+                <div class="nav__bar bar">
+                    <span class="bar__line"></span>
+                    <span class="bar__line"></span>
+                    <span class="bar__line"></span>
+                </div>
             </nav>
         </div>
     </header>
@@ -47,7 +55,7 @@
         <section id="advantages" class="advantages">
             <div class="advantages__container__top">
                 <h2 class="advantages__container__top__title title">
-                    Преимущества обучения в <span class="accent-text">Vector</span>
+                    Преимущества обучения в&nbsp;<span class="accent-text">Vector</span>
                 </h2>
                 <p class="advantages__container__top__descr">
                     Уже есть своя идея 3D&nbsp;проекта? Наши преподаватели помогут с&nbsp;моделированием абсолютно любой
@@ -89,8 +97,7 @@
                         <p class="teachers-list__item__name">Влада Петрова</p>
                         <p class="teachers-list__item__text">
                             Секрет настоящего обучения в&nbsp;том, чтобы подумать о&nbsp;том, что&nbsp;ты&nbsp;выучил
-                            сегодня
-                            утром&nbsp;так, будто ты&nbsp;знал это всю жизнь
+                            сегодня утром&nbsp;так, будто ты&nbsp;знал это всю жизнь
                         </p>
                     </li>
                     <li class="teachers-list__item">
@@ -174,7 +181,7 @@
                         <p class="courses-list__item__programm">Скульптинг в ZBrush</p>
                         <p class="courses-list__item__descr">
                             Освой основные инструменты для работы с&nbsp;3D-графикой.
-                            Попробуй себя в&nbsp;роли 3D-моделлера, художника по&nbsp;персонажам и&nbsp;3D&nbsp;-&nbsp;аниматора.
+                            Попробуй себя в&nbsp;роли 3D&nbsp;-&nbsp;моделлера, художника по&nbsp;персонажам и&nbsp;3D&nbsp;-&nbsp;аниматора.
                             Собери портфолио, с&nbsp;которым можно стартовать в кино, рекламе и
                             гейм&nbsp;-&nbsp;индустрии.
                         </p>
@@ -207,6 +214,7 @@
         </div>
     </footer>
 
+    <script src="js/bar.js"></script>
 </body>
 
 </html>

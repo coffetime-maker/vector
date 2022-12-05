@@ -90,6 +90,20 @@ body {
     margin-right: auto;
 }
 
+.bar {
+    display: none;
+}
+
+.bar__line {
+    display: block;
+    margin: 5px auto;
+    width: 21px;
+    height: 2px;
+    background-color: var(--accent-color);
+
+    transition: .2s;
+}
+
 .menu {
     display: flex;
 }
