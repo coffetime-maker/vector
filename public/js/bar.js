@@ -6,7 +6,7 @@ bar.addEventListener('click', mobileMenu);
 function mobileMenu() {
     bar.classList.toggle('active');
     navMenu.classList.toggle('active');
-    cart.classList.remove('active')
+    cart.classList.remove('active');
 };
 
 const navLink = document.querySelectorAll('.menu__item');
