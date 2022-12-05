@@ -47,6 +47,7 @@
     }
 
     .hero__container {
+        background: url('../img/media_768/hero_img_768.png'), -o-radial-gradient(50% 50%, 37% 37%, #2DDB81 0.01%, #000000 100%);
         background: url('../img/media_768/hero_img_768.png'), radial-gradient(37% 37% at 50% 50%, #2DDB81 0.01%, #000000 100%);
         background-repeat: no-repeat;
         background-position: 91% 46%;
@@ -68,10 +69,13 @@
     }
 
     .teachers-list {
+        display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
         row-gap: 45px;
-        column-gap: 30px;
+        -webkit-column-gap: 30px;
+           -moz-column-gap: 30px;
+                column-gap: 30px;
     }
 
     .courses__container {
@@ -79,6 +83,7 @@
     }
 
     .courses-list {
+        display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(330px, 2fr));
         grid-gap: 30px;
@@ -119,8 +124,13 @@
 @media (max-width: 670px) {
 
     .header__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .header__container__logo {
@@ -131,6 +141,7 @@
     .hero__container {
         padding-right: 34px;
         padding-left: 34px;
+        background: -o-radial-gradient(50% 50%, 31.79% 31.79%, #2DDB81 0.01%, #000000 100%);
         background: radial-gradient(31.79% 31.79% at 50% 50%, #2DDB81 0.01%, #000000 100%);
         ;
     }
@@ -173,10 +184,13 @@
     }
 
     .teachers-list {
+        display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 2fr));
         row-gap: 20px;
-        column-gap: 30px;
+        -webkit-column-gap: 30px;
+           -moz-column-gap: 30px;
+                column-gap: 30px;
     }
 
     .teachers-list__item {
@@ -189,6 +203,7 @@
     }
 
     .courses-list {
+        display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 2fr));
         grid-gap: 30px;
@@ -233,9 +248,16 @@
 @media (max-width: 546px) {
 
     .header__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         padding-top: 26px;
         padding-right: 20px;
         padding-left: 15px;
@@ -248,14 +270,22 @@
 
     .menu {
         position: absolute;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         background-color: var(--total-black);
         width: 100%;
         height: 330px;
         text-align: center;
         top: 86px;
         left: -100%;
-        box-shadow: 0px 5px 10px 2px rgba(71, 45, 45, 0.2);
+        -webkit-box-shadow: 0px 5px 10px 2px rgba(71, 45, 45, 0.2);
+                box-shadow: 0px 5px 10px 2px rgba(71, 45, 45, 0.2);
+
+        -webkit-transition: .2s;
+
+        -o-transition: .2s;
 
         transition: .2s;
     }
@@ -282,11 +312,15 @@
     }
 
     .bar.active .bar__line:nth-child(1) {
-        transform: translateY(7px) rotate(45deg);
+        -webkit-transform: translateY(7px) rotate(45deg);
+            -ms-transform: translateY(7px) rotate(45deg);
+                transform: translateY(7px) rotate(45deg);
     }
 
     .bar.active .bar__line:nth-child(3) {
-        transform: translateY(-7px) rotate(-45deg);
+        -webkit-transform: translateY(-7px) rotate(-45deg);
+            -ms-transform: translateY(-7px) rotate(-45deg);
+                transform: translateY(-7px) rotate(-45deg);
     }
 
     .hero__container {
@@ -330,8 +364,13 @@
     }
 
     .advantages-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .advantages-list__item {
@@ -349,10 +388,13 @@
     }
 
     .teachers-list {
+        display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
         row-gap: 15px;
-        column-gap: 30px;
+        -webkit-column-gap: 30px;
+           -moz-column-gap: 30px;
+                column-gap: 30px;
     }
 
     .teachers__container {
@@ -382,6 +424,7 @@
     }
 
     .courses-list {
+        display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
         grid-gap: 30px;

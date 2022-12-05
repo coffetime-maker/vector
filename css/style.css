@@ -52,21 +52,28 @@ body {
     color: var(--total-black);
     border-radius: 20px;
 
+    -webkit-transition: all .2s ease-in-out;
+
+    -o-transition: all .2s ease-in-out;
+
     transition: all .2s ease-in-out;
 }
 
 .accent-btn:hover {
     background-color: var(--hover-green);
-    box-shadow: var(--hover-shadow);
+    -webkit-box-shadow: var(--hover-shadow);
+            box-shadow: var(--hover-shadow);
 }
 
 .accent-btn:active {
     background-color: var(--active-green);
-    box-shadow: var(--active-shadow);
+    -webkit-box-shadow: var(--active-shadow);
+            box-shadow: var(--active-shadow);
 }
 
 .accent-btn:focus-visible {
-    box-shadow: 0px 0px 0px 5px;
+    -webkit-box-shadow: 0px 0px 0px 5px;
+            box-shadow: 0px 0px 0px 5px;
     color: var(--main-text);
 }
 
@@ -76,8 +83,12 @@ body {
 }
 
 .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 auto;
     padding-top: 29px;
     padding-bottom: 31px;
@@ -101,10 +112,16 @@ body {
     height: 2px;
     background-color: var(--accent-color);
 
+    -webkit-transition: .2s;
+
+    -o-transition: .2s;
+
     transition: .2s;
 }
 
 .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -113,6 +130,8 @@ body {
 }
 
 .menu__item:hover a {
+    -webkit-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
     transition: color .2s ease-in-out;
 }
 
@@ -125,6 +144,8 @@ body {
 }
 
 .menu__item a {
+    -webkit-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
     transition: color .2s ease-in-out;
 }
 
@@ -142,6 +163,7 @@ body {
     margin: 0 auto;
     max-width: 1440px;
     padding: 0 165px;
+    background: url('../img/hero_img.png'), -o-radial-gradient(50% 50%, 40.93% 40.93%, #2DDB81 0.01%, #000000 100%);
     background: url('../img/hero_img.png'), radial-gradient(40.93% 40.93% at 50% 50%, #2DDB81 0.01%, #000000 100%);
     background-repeat: no-repeat;
     background-position: 84% 0%;
@@ -205,12 +227,18 @@ body {
 }
 
 .advantages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .advantages-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 110px;
     max-width: 350px;
     min-height: 80px;
@@ -259,6 +287,7 @@ body {
 }
 
 .teachers-list {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
     grid-gap: 30px;
@@ -297,6 +326,7 @@ body {
 }
 
 .courses-list {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(540px, 2fr));
     grid-gap: 30px;
@@ -367,8 +397,12 @@ body {
 }
 
 .footer__top__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0 auto;
     max-width: 1440px;
     padding-top: 30px;
@@ -382,6 +416,8 @@ body {
 }
 
 .social__link svg path {
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
@@ -410,8 +446,12 @@ body {
 }
 
 .footer__bottom__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0 auto;
     max-width: 1440px;
     padding: 3px 165px;
